@@ -1,0 +1,45 @@
+Sub bonus()
+
+    Dim i  As Integer
+    Dim ticker As String
+    Dim amount As Double
+    amount = 0
+    Dim ticker2 As String
+    Dim amount2 As Double
+    amount2 = 0
+    Dim ticker3 As String
+    Dim amount3 As Double
+    amount3 = 0
+    
+    For i = 2 To 91
+    
+        If Cells(i, 11).Value > amount Then
+            
+            amount = Cells(i, 11).Value
+            ticker = Cells(i, 9).Value
+            Cells(2, 16).Value = ticker
+            Cells(2, 17).Value = amount
+            
+        End If
+            
+        If Cells(i, 11).Value < amount2 Then
+            
+            amount2 = Cells(i, 11).Value
+            ticker2 = Cells(i, 9).Value
+            Cells(3, 16).Value = ticker2
+            Cells(3, 17).Value = amount2
+            
+        End If
+        
+        If Cells(i, 12).Value > amount3 Then
+            
+            amount3 = Cells(i, 11).Value
+            ticker3 = Cells(i, 9).Value
+            Cells(4, 16).Value = ticker3
+            Cells(4, 17).Value = amount3
+            
+        End If
+        
+    Next i
+    
+End Sub

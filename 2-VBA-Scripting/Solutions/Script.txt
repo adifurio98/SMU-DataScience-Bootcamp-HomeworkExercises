@@ -1,0 +1,65 @@
+Sub stockOutput()
+    
+    ' variables to hold ticker names and rows
+    Dim ticker As String
+    Dim i As Integer
+    Dim count As Integer
+        count = 2
+    Dim openTotal As Double
+    Dim closeTotal As Double
+    Dim counter As Integer
+    counter = 2
+    Dim volume As Double
+    volume = 0
+    
+    
+    ' loop through rows
+    For i = 2 To 22771
+    
+        ' get ticker of row
+        ticker = Cells(i, 1).Value
+
+        ' if ticker after is different
+        If (ticker <> Cells((i + 1), 1).Value) Then
+            
+            ' write out ticker and reset info
+            Cells(count, 9).Value = ticker
+            ticker = ""
+            
+            ' write out yearly change
+            closeTotal = Cells(i, 6).Value
+            Cells(count, 10).Value = closeTotal - openTotal
+            
+            ' convert yearly change to percent
+            Cells(count, 11).Value = (Cells(count, 10).Value / openTotal)
+            
+            ' write out total stock
+            volume = volume + Cells(i, 7)
+            Cells(count, 12).Value = volume
+            
+            ' reset values
+            closeTotal = 0
+            openTotal = 0
+            volume = 0
+            count = count + 1
+            
+        ' if ticker before is different
+        ElseIf (ticker <> Cells((i - 1), 1).Value) Then
+            
+            ' grab the opening night value to store
+            openTotal = Cells(i, 3).Value
+            ' grab volume here thats missed by the else
+            volume = volume + Cells(i, 7)
+            
+       ' if ticker has no changes
+        Else
+            
+            ' when ticker isnt changing
+            volume = volume + Cells(i, 7)
+        
+        End If
+        
+    Next i
+
+   
+End Sub

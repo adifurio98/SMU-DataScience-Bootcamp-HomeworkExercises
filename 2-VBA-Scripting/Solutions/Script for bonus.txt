@@ -1,13 +1,22 @@
 Sub bonus()
 
     Dim i  As Integer
+    
+    ' ticker of percent increase
     Dim ticker As String
+    ' value of percent increase
     Dim amount As Double
     amount = 0
+    
+    ' ticker of percent decrease
     Dim ticker2 As String
+    ' value of percent decrease
     Dim amount2 As Double
     amount2 = 0
+    
+    ' ticker of stock volume
     Dim ticker3 As String
+    ' value of stock volume
     Dim amount3 As Double
     amount3 = 0
     

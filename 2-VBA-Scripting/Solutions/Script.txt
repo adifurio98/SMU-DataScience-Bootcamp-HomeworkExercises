@@ -7,10 +7,8 @@ Sub stockOutput()
         count = 2
     Dim openTotal As Double
     Dim closeTotal As Double
-    Dim counter As Integer
-    counter = 2
     Dim volume As Double
-    volume = 0
+        volume = 0
     
     
     ' loop through rows

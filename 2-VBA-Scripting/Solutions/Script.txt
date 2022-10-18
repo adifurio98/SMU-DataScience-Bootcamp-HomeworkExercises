@@ -29,7 +29,7 @@ Sub stockOutput()
             Cells(count, 10).Value = closeTotal - openTotal
             
             ' convert yearly change to percent
-            Cells(count, 11).Value = (Cells(count, 10).Value / openTotal)
+            Cells(count, 11).Value = (Cells(count, 10).Value / openTotal) * 100
             
             ' write out total stock
             volume = volume + Cells(i, 7)

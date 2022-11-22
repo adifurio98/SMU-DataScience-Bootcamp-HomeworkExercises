@@ -68,14 +68,14 @@ dMin = cmList[iMin]
 
 print(f'Financial Analysis \n----------------------------\nTotal Months: {months} \nTotal: ${total} \nAverage Change: ${average} \nGreatest Increase in Profits: {dMax} ${maxi} \nGreatest Decrease in Profits: {dMin} ${mini}')
 
-# # create a new file and write in f'  
-# f = open("pybank.txt", "x")
-# f.write(f'Financial Analysis \n----------------------------\nTotal Months: {months} \nTotal: ${total} \nAverage Change: ${average} \nGreatest Increase in Profits: {dMax} ${maxi} \nGreatest Decrease in Profits: {dMin} ${mini}')
-# f.close()
+# create a new file and write in f'  
+f = open("pybank.txt", "x")
+f.write(f'Financial Analysis \n----------------------------\nTotal Months: {months} \nTotal: ${total} \nAverage Change: ${average} \nGreatest Increase in Profits: {dMax} ${maxi} \nGreatest Decrease in Profits: {dMin} ${mini}')
+f.close()
 
-# # open new file to read
-# f = open("pybank.txt", "r")
-# print(f.read())
+# open new file to read
+f = open("pybank.txt", "r")
+print(f.read())
         
         
         

@@ -1,6 +1,4 @@
 import csv
-from regex import R
-from sympy import per
 
 budget_csv = "PyPoll/CSV/election_data.csv"
 

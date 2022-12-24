@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Add a title here -->
+    <title>Bootstrap Humids</title>
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="margin-bottom:50px;">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Latitude</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                      <div class="dropdown-menu">
+                          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                          <a class="dropdown-item" href="humidity.html">Humidity</a>
+                          <a class="dropdown-item" href="temp.html">Temperature</a>
+                          <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../comparison.html">Comparison</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../data.html">Data</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- Outer Container -->
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="card border-primary mb-3">
+                  <div class="card-header">
+                      <h1>Humidity</h1>
+                  </div>
+                  <div class="card-body">
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <img src="../assets/images/Fig2.png" width="100%">
+                              </div>
+                          </div>
+                          <div class="row">
+
+                              <div class="col-md-12">
+                                  <p>I believe in America. America has made my fortune. And I raised my daughter in the American fashion. I gave her freedom but I taught her never to dishonor her family. She found a “boy friend,” not an Italian. She went to the movies with him. She stayed out late. I didn’t protest. Two months ago he took her for a drive, with another boy friend. They made her drink whiskey and then they tried to take advantage of her. She resisted. She kept her honor. So they beat her. Like an animal. When I went to the hospital her nose was broken. Her jaw was shattered, held together by wire. She couldn’t even weep because of the pain. But I wept. Why did I weep? She was the light of my life. A beautiful girl. Now she will never be beautiful again. Sorry… I went to the police, like a good American. These two boys were brought to trial. The judge sentenced them to three years in prison, and suspended the sentence. Suspended sentence! They went free that very day! I stood in the courtroom like a fool, and those two bastards, they smiled at me. Then I said to my wife, “For justice, we must go to Don Corleone.”</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card border-primary mb-3">
+                  <div class="card-header">
+                      <h1>Visualizations</h1>
+                  </div>
+                  <div class="card-body">
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-md-6 col-sm-6">
+                                  <a href="temp.html"><img src="../assets/images/Fig1.png" width="100%"></a>
+                              </div>
+                              <div class="col-md-6 col-sm-6" style="border: 3px solid">
+                                  <a href="humidity.html"><img src="../assets/images/Fig2.png" width="100%"></a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6 col-sm-6">
+                                  <a href="cloudiness.html"><img src="../assets/images/Fig3.png" width="100%"></a>
+                              </div>
+                              <div class="col-md-6 col-sm-6">
+                                  <a href="wind.html"><img src="../assets/images/Fig4.png" width="100%"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- End of container -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
